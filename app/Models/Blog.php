@@ -17,6 +17,7 @@ class Blog extends Model
     protected $fillable = [
         'image_url',
         'is_live',
+        'expired_at',
         'main_content',
         'published_at',
         'slug',
