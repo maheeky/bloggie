@@ -18,6 +18,7 @@ class Blog extends Model
         'image_url',
         'is_live',
         'expired_at',
+        'featured_at',
         'main_content',
         'published_at',
         'slug',
