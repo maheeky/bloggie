@@ -23,6 +23,7 @@ class Blog extends Model
         'published_at',
         'slug',
         'title',
+        'category'
     ];
 
     /**
@@ -36,4 +37,9 @@ class Blog extends Model
         'is_live'       => 'boolean',
         'published_at'  => 'datetime',
     ];
+
+    public function category()
+    {
+        return $this->belongsTo('App\Category');
+    }
 }

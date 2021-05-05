@@ -17,7 +17,6 @@ Route::get('/', function () {
 Route::get('/blog', [\App\Http\Controllers\Website\BlogController::class, 'index']);
 Route::get('/blog/{blog:slug}', [\App\Http\Controllers\Website\BlogController::class, 'show']);
 
-
 /** Admin Routes */
 Route::group([
     'as'         => 'admin.',

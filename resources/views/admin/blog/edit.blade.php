@@ -183,6 +183,22 @@
                                         type="text"
                                     >{{ old('main_content') ?? ($blog->main_content ?? '') }}</textarea>
                                 </div>
+                                <div class="form-group">
+                                    <label
+                                        for="category"
+                                        class="form-control-label"
+                                    >
+                                        Category
+                                    </label>
+                                    <input
+                                        id="category"
+                                        class="form-control"
+                                        name="category"
+                                        placeholder="Category"                                        
+                                        type="text"
+                                        value="{{ old('category') ?? ($blog->category_id ?? '') }}"
+                                    />
+                                </div>
                             </div>
                             <!-- Card footer -->
                             <div class="card-footer py-4 text-right">

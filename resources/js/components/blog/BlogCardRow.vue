@@ -21,7 +21,6 @@
                     <template v-if="isFeatured">
                         Featured at: {{ blog.featured_at | prettyDateTime }}
                     </template>
-
                     <template v-else>
                         {{ blog.published_at | prettyDate }}
                     </template>
