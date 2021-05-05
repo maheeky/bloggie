@@ -9,6 +9,7 @@
                 <div
                     v-for="blog in blogs"
                     class="col-4 mb-4"
+                    :key="blog.slug"
                 >
                     <blog-card :blog="blog" />
                 </div>
