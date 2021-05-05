@@ -59442,7 +59442,7 @@ var render = function() {
             "a",
             {
               staticClass: "btn btn-primary mt-4",
-              attrs: { href: "/blog/" + _vm.blog.id }
+              attrs: { href: "/blog/" + _vm.blog.slug }
             },
             [_vm._v("\n                    View Blog\n                ")]
           )
