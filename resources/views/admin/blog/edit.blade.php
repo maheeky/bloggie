@@ -196,7 +196,7 @@
                                         name="category"
                                         placeholder="Category"                                        
                                         type="text"
-                                        value="{{ old('category') ?? ($blog->category_id ?? '') }}"
+                                        value="{{ old('category') ?? ($blog->category ?? '') }}"
                                     />
                                 </div>
                             </div>
